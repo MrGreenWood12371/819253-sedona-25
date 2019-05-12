@@ -29,8 +29,112 @@
     </nav>
   </header>
   <main>
+    <h1 class="visually-hidden">Каталог выбора отелей в "Седона"</h1>
+    <section class="catalog-filter">
+      <h2 class="visually-hidden">Фильтр каталога отелей</h2>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <div class="infrastructure-filter">
+          <h3 class="infrastructure-title">Инфраструктура:</h3>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="checkbox"></span>
+                Бассейн
+              </label>
+            </li>
+            <li class="filter-list-item">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="checkbox"></span>
+                Парковка
+              </label>
+            </li>
+            <li class="filter-list-item">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="checkbox"></span>
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="type-filter">
+          <h3 class="type-title">Тип жилья:</h3>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="checkbox"></span>
+                Гостиница
+              </label>
+            </li>
+            <li class="filter-list-item">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="checkbox"></span>
+                Мотель
+              </label>
+            </li>
+            <li class="filter-list-item">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="checkbox"></span>
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="cost-filter">
+          <h3 class="cost-title">Стоимость в сутки (Р):</h3>
+          <div class="price-controls">
+            <label>
+              <span>От</span>
+              <input type="text" value="0">
+            </label>
+            <label>
+              <span>До</span>
+              <input type="text" value="3000">
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="back-scale">
+              </div>
+            </div>
+            <div class="toggle min-price-toggle"></div>
+            <div class="toggle max-price-toggle"></div>
+          </div>
+        </div>
+        <button class="price-form-submit" type="submit">Показать</button>
+      </form>
+      <form class="navbar-form" action="https://echo.htmlacademy.ru/" method="GET">
+        <div class="navbar">
+          <p class="search-result">Найдено: 3</p>
+          <ul class="navbar-items ulres">
+            <li class="navbar-item">
+              <p class="navbar-sort">Сортировка:</p>
+            </li>
+            <li>
+              <a class="navbar-active" href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
+            </li>
+            <li>
+              <a href="#"> </a>
+            </li>
+            <li>
+              <a href="#"> </a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </section>
     <section class="catalog">
-      <h1 class="visually-hidden">Каталог выбора отелей в "Седона"</h1>
       <article class="catalog-item">
         <div class="catalog-item-info">
           <img src="" alt="Поездка в гостиницу Амара резорт">
@@ -60,11 +164,11 @@
           <a class="button button-purchase" href="item.html">Забронировать</a>
         </div>
         <div class="catalog-item-rating">
-            <ul class="star-rating">
-                <li class="star-rating-item"></li>
-                <li class="star-rating-item"></li>
-                <li class="star-rating-item"></li>
-              </ul>
+          <ul class="star-rating">
+            <li class="star-rating-item"></li>
+            <li class="star-rating-item"></li>
+            <li class="star-rating-item"></li>
+          </ul>
           <span class="number-rating">Рейтинг: 8,9</span>
         </div>
       </article>
@@ -78,32 +182,33 @@
           <a class="button button-purchase" href="item.html">Забронировать</a>
         </div>
         <div class="catalog-item-rating">
-            <ul class="star-rating">
-                <li class="star-rating-item"></li>
-                <li class="star-rating-item"></li>
-              </ul>
+          <ul class="star-rating">
+            <li class="star-rating-item"></li>
+            <li class="star-rating-item"></li>
+          </ul>
           <span class="number-rating">Рейтинг: 9,2</span>
         </div>
       </article>
     </section>
   </main>
   <footer>
-    <p class="footer-heshtag">#visitsedona</p>
-    <ul class="our-social">
-      <li class="our-socials-twitter social-icon">
-        <a href="twitter"></a>
-      </li>
-      <li class="our-socials-fb social-icon">
-        <a href="facebook"></a>
-      </li>
-      <li class="our-socials-youtube social-icon">
-        <a href="youtube"></a>
-      </li>
-    </ul>
-    <span>Website by</span>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="" alt="лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
-    </a>
+    <h2 class="visually-hidden">Наши контакты</h1>
+      <p class="footer-heshtag">#visitsedona</p>
+      <ul class="our-social">
+        <li class="our-socials-twitter social-icon">
+          <a href="twitter"></a>
+        </li>
+        <li class="our-socials-fb social-icon">
+          <a href="facebook"></a>
+        </li>
+        <li class="our-socials-youtube social-icon">
+          <a href="youtube"></a>
+        </li>
+      </ul>
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="" alt="лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
+      </a>
   </footer>
 </body>
 
