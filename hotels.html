@@ -9,7 +9,7 @@
 <body>
   <header>
     <a href="index.html">
-        <img src="img/logo/logo-sedona.svg" alt="Логотип Седоны" width="140" height="71">
+      <img src="img/logo/logo-sedona.svg" alt="Логотип Седоны" width="140" height="71">
     </a>
     <nav class="main-navigation">
       <ul class="main-navigation-list">
@@ -73,8 +73,8 @@
             </label>
           </fieldset>
         </div>
-        <div class="cost-filter">
-          <h3 class="cost-title">Стоимость в сутки (Р):</h3>
+        <fieldset class="cost-filter">
+          <legend class="cost-title">Стоимость в сутки (Р):</legend>
           <div class="price-controls">
             <label>
               <span>От</span>
@@ -93,32 +93,32 @@
             <div class="toggle min-price-toggle"></div>
             <div class="toggle max-price-toggle"></div>
           </div>
-        </div>
-        <button class="price-form-submit" type="submit">Показать</button>
+        </fieldset>
+        <button class="price-form-submit" type="submit" aria-label="Отфильтровать гостиницы">Показать</button>
       </form>
-        <div class="navbar">
-          <p class="search-result">Найдено: 3</p>
-          <ul class="navbar-items ulres">
-            <li class="navbar-item">
-              <p class="navbar-sort">Сортировка:</p>
-            </li>
-            <li>
-              <a class="navbar-active" href="#">По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По рейтингу</a>
-            </li>
-            <li>
-              <a href="#"> </a>
-            </li>
-            <li>
-              <a href="#"> </a>
-            </li>
-          </ul>
-        </div>
+      <div class="navbar">
+        <p class="search-result">Найдено: 3</p>
+        <ul class="navbar-items ulres">
+          <li class="navbar-item">
+            <p class="navbar-sort">Сортировка:</p>
+          </li>
+          <li>
+            <a class="navbar-active" href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По рейтингу</a>
+          </li>
+          <li>
+            <a href="#"> </a>
+          </li>
+          <li>
+            <a href="#"> </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="catalog">
       <article class="catalog-item">
@@ -182,18 +182,19 @@
       <p class="footer-heshtag">#visitsedona</p>
       <ul class="our-social">
         <li class="our-socials-twitter social-icon">
-          <a href="twitter"></a>
+          <a href="twitter" aria-label="Наш твиттер"></a>
         </li>
         <li class="our-socials-fb social-icon">
-          <a href="facebook"></a>
+          <a href="facebook" aria-label="Мы в фейсбуке"></a>
         </li>
         <li class="our-socials-youtube social-icon">
-          <a href="youtube"></a>
+          <a href="youtube" aria-label="Наш канал на ютубе"></a>
         </li>
       </ul>
       <span>Website by</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo/logo-htmlacademy.svg" alt="лендинг интенсива «Профессиональный HTML и CSS, уровень 1»" width="115" height="41">
+        <img src="img/logo/logo-htmlacademy.svg" alt="лендинг интенсива «Профессиональный HTML и CSS, уровень 1»"
+          width="115" height="41">
       </a>
   </footer>
 </body>

@@ -104,13 +104,13 @@
       <p class="footer-heshtag">#visitsedona</p>
       <ul class="our-social">
         <li class="our-socials-twitter social-icon">
-          <a href="twitter"></a>
+          <a href="twitter" aria-label="Наш твиттер"></a>
         </li>
         <li class="our-socials-fb social-icon">
-          <a href="facebook"></a>
+          <a href="facebook" aria-label="Мы в фейсбуке"></a>
         </li>
         <li class="our-socials-youtube social-icon">
-          <a href="youtube"></a>
+          <a href="youtube" aria-label="Наш канал на ютубе"></a>
         </li>
       </ul>
       <span>Website by</span>
@@ -123,34 +123,30 @@
     <form action="https://echo.htmlacademy.ru/" method="POST">
       <fieldset class="hotel-popup-field">
         <legend class="visually-hidden">Форма поиска гостиницы в седоне</legend>
-        <div class="date-input-arrival">
-          <label>
-            <span class="popup-text">Дата заезда:</span>
-            <input class="popup-input" type="text" name="arrive" value="24 апреля 2017">
-          </label>
-        </div>
-        <div class="date-input-departure">
-          <label>
-            <span class="popup-text">Дата выезда:</span>
-            <input class="popup-input" type="text" name="departure" value="4 июля 2017">
-          </label>
-        </div>
+        <label>
+          <span class="popup-text">Дата заезда:</span>
+          <input class="popup-input" type="text" name="arrive" value="24 апреля 2017">
+        </label>
+        <label class="date-input-departure">
+          <span class="popup-text">Дата выезда:</span>
+          <input class="popup-input" type="text" name="departure" value="4 июля 2017">
+        </label>
         <div class="people-input">
           <div class="adults-input">
             <span>Взрослые:</span>
-            <button class="button-less" type="button">-</button>
+            <button class="button-less" type="button" aria-label="Уменьшить цену">-</button>
             <input type="text" name="adults-number" value="2">
-            <button class="button-more" type="button">+</button>
+            <button class="button-more" type="button" aria-label="Увеличить цену">+</button>
           </div>
           <div class="children-input">
             <span>Дети:</span>
-            <button class="button-less" type="button">-</button>
+            <button class="button-less" type="button" aria-label="Уменьшить цену">-</button>
             <input type="text" name="children-number" value="0">
-            <button class="button-more" type="button">+</button>
+            <button class="button-more" type="button" aria-label="Увеличить цену">+</button>
           </div>
         </div>
       </fieldset>
-      <button class="popup-submit" type="submit">Найти</button>
+      <button class="popup-submit" type="submit" aria-label="Найти подходящую гостиницу">Найти</button>
     </form>
   </div>
 </body>
