@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -12,7 +15,7 @@
       <img src="img/logo/logo-sedona.svg" alt="Логотип Седоны" width="140" height="71">
     </a>
     <nav class="main-navigation">
-      <ul class="main-navigation-list">
+      <ul class="main-navigation-list ulres">
         <li class="main-navigation-list-item">
           <a href="info.html">Информация</a>
         </li>
@@ -32,10 +35,10 @@
     <h1 class="visually-hidden">Каталог выбора отелей в "Седона"</h1>
     <section class="catalog-filter">
       <h2 class="visually-hidden">Фильтр каталога отелей</h2>
-      <form action="https://echo.htmlacademy.ru/" method="GET">
+      <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="GET">
         <div class="infrastructure-filter">
           <fieldset>
-            <legend class="infrastructure-legend">Инфраструктура:</legend>
+            <legend class="infrastructure-legend filter-legend">Инфраструктура:</legend>
             <label class="check">
               <input class="check-input" type="checkbox">
               <span class="checkbox"></span>
@@ -55,7 +58,7 @@
         </div>
         <div class="type-filter">
           <fieldset>
-            <legend class="type-legend">Тип жилья:</legend>
+            <legend class="type-legend filter-legend">Тип жилья:</legend>
             <label class="check">
               <input class="check-input" type="checkbox">
               <span class="checkbox"></span>
@@ -74,7 +77,7 @@
           </fieldset>
         </div>
         <fieldset class="cost-filter">
-          <legend class="cost-title">Стоимость в сутки (Р):</legend>
+          <legend class="cost-title filter-legend">Стоимость в сутки (Р):</legend>
           <div class="price-controls">
             <label>
               <span>От</span>
@@ -94,7 +97,7 @@
             <div class="toggle max-price-toggle"></div>
           </div>
         </fieldset>
-        <button class="price-form-submit" type="submit" aria-label="Отфильтровать гостиницы">Показать</button>
+        <button class="price-form-submit buttonres" type="submit" aria-label="Отфильтровать гостиницы">Показать</button>
       </form>
       <div class="navbar">
         <p class="search-result">Найдено: 3</p>
@@ -124,7 +127,7 @@
       <article class="catalog-item">
         <div class="catalog-item-info">
           <img src="img/hotels/hotel-picture.jpg" alt="Поездка в гостиницу Амара резорт" width="135" height="90">
-          <h2 class="catalog-item-title">Amara Resort & Spa</h2>
+          <a class="catalog-item-link" href="item.html"><h2 class="catalog-item-title">Amara Resort & Spa</h2></a>
           <p class="catalog-item-name">Гостиница</p>
           <p class="catalog-item-price">От 4000 Р.</p>
           <a class="button button-info" href="item.html">Подробнее</a>
@@ -143,7 +146,7 @@
       <article class="catalog-item">
         <div class="catalog-item-info">
           <img src="img/hotels/desert.jpg" alt="Поездка в мотель в пустыне Куал ин" width="135" height="90">
-          <h2 class="catalog-item-title">Desert Quail Inn</h2>
+          <a class="catalog-item-link" href="item.html"><h2 class="catalog-item-title">Desert Quail Inn</h2></a>
           <p class="catalog-item-name">Мотель</p>
           <p class="catalog-item-price">От 3000 Р.</p>
           <a class="button button-info" href="item.html">Подробнее</a>
@@ -161,7 +164,7 @@
       <article class="catalog-item">
         <div class="catalog-item-info">
           <img src="img/hotels/villas.jpg" alt="Поездка в апартаменты в Поко Диабло" width="135" height="90">
-          <h2 class="catalog-item-title">Villas at Poco Diablo</h2>
+          <a class="catalog-item-link" href="item.html"><h2 class="catalog-item-title">Villas at Poco Diablo</h2></a>
           <p class="catalog-item-name">Апартаменты</p>
           <p class="catalog-item-price">От 2000 Р.</p>
           <a class="button button-info" href="item.html">Подробнее</a>
