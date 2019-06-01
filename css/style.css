@@ -101,6 +101,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-navigation-list-item:first-child{
@@ -471,6 +472,10 @@ a {
   margin-right: 10px;
 }
 
+.academy-logo{
+  height: 41px;
+}
+
 .academy-logo:hover{
   fill: #81b3d2;
 }
@@ -506,6 +511,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   border: none;
   padding: 0;
   margin: 0;
@@ -552,6 +558,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   border: none;
   margin: 0;
   padding: 0;
@@ -561,6 +568,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   position: relative;
   border: none;
   margin-left: auto;
