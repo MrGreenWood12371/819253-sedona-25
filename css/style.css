@@ -115,7 +115,7 @@ a {
 
 .main-navigation-list-item:last-child{
   padding-right: 72px;
-  margin-left: 161px;
+  margin-left: 158px;
 }
 
 .main-navigation-list-item a{
@@ -388,16 +388,17 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 100%;
   padding: 37px 0;
+  justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .tag-item{
-  margin-left: 20px;
+  margin-left: 133px;
+  margin-bottom: 10px;
 }
 
 .footer-heshtag{
@@ -411,7 +412,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 30px;
+  margin-left: 255px;
+  margin-right: 230px;
 }
 
 .our-social li:not(:last-child){
@@ -940,12 +942,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
 }
 
 .hotel-popup-field span{
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.popup-text{
+  padding-top: 5px;
 }
 
 .popup-input{
@@ -971,11 +978,16 @@ a {
 }
 
 .date-input-arrive{
+  display: flex;
   margin-bottom: 29px;
 }
 
 .date-input-arrive .popup-input{
   margin-left: 20px;
+}
+
+.date-input-departure{
+  display: flex;
 }
 
 .date-input-departure .popup-input{
@@ -986,6 +998,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   margin-top: 30px;
 }
 
