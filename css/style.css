@@ -51,7 +51,7 @@ a {
 }
 
 @keyframes bounce{
-  0% {transform: translateY(-2000px);}
+  0% {transform: translateY(-80px);}
   70% {transform: translateY(30px);}
   90% {transform: translateY(-10px);}
   100% {transform: translateY(0);}
@@ -363,6 +363,10 @@ a {
   color: #333;
   line-height: 24px;
   margin-bottom: 45px;
+}
+
+.index-map{
+  background-image: url(../img/background/map.jpg);
 }
 
 .button{
